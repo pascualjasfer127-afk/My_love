@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Monthsary, My Love ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 25px 12px;
+    overflow-x: hidden;
+    font-family: Georgia, serif;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #240046, #9d174d, #ff85a1);
+}
+
+.container {
+    max-width: 440px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    margin: 12px 0;
+    font-size: clamp(30px, 8vw, 42px);
+    color: #fff0f5;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 20px white, 0 0 35px pink;
+    }
+}
+
+.subtitle {
+    margin-bottom: 22px;
+    font-size: 17px;
+}
+
+.slideshow {
+    width: 100%;
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid white;
+    border-radius: 22px;
+    box-shadow: 0 0 25px #ffb3c6;
+    background: #6a194b;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideShow 20s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 5s; }
+.slide:nth-child(3) { animation-delay: 10s; }
+.slide:nth-child(4) { animation-delay: 15s; }
+
+@keyframes slideShow {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    5% {
+        opacity: 1;
+    }
+    23% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+    28% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.caption {
+    margin-top: 18px;
+    font-size: 19px;
+    color: #ffe0eb;
+}
+
+.letter {
+    margin-top: 24px;
+    padding: 25px 20px;
+    background: rgba(255,255,255,.13);
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 23px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+    line-height: 1.9;
+    animation: appear 2s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.letter h2 {
+    margin-bottom: 15px;
+    color: #ffe0eb;
+}
+
+.signature {
+    margin-top: 22px;
+    font-size: 23px;
+    font-style: italic;
+    color: #ffd6e0;
+}
+
+.music {
+    margin-top: 23px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.14);
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -50px;
+    z-index: 1;
+    pointer-events: none;
+    animation: floatUp 9s linear infinite;
+}
+
+.heart:nth-of-type(1) { left: 5%; animation-delay: 0s; }
+.heart:nth-of-type(2) { left: 25%; animation-delay: 3s; }
+.heart:nth-of-type(3) { left: 70%; animation-delay: 1s; }
+.heart:nth-of-type(4) { left: 90%; animation-delay: 5s; }
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+    15% { opacity: 1; }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.footer {
+    margin: 25px 0 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart">💗</div>
+<div class="heart">💕</div>
+<div class="heart">❤️</div>
+<div class="heart">💖</div>
+
+<div class="container">
+
+    <div style="font-size:55px;">👩‍❤️‍💋‍👨</div>
+
+    <h1>Happy Monthsary!</h1>
+
+    <p class="subtitle">
+        To My Favorite Person, My Love ❤️
+    </p>
+    <div class="slideshow">
+        <img class="slide" src="couple.png"
+             alt="Our first memory">
+
+        <img class="slide" src="my_love.png"
+             alt="Our beautiful moment">
+
+        <img class="slide" src="ganda.jpg"
+             alt="A special memory together">
+
+        <img class="slide" src="love_ko.png"
+             alt="My favorite person">
+    </div>
+
+    <p class="caption">
+        Every picture holds a piece of my heart. 💕
+    </p>
+
+    <div class="music">
+        <h2>🎶 Our Love Song 🎶</h2>
+        <p>  just for you My Love.❤️</p>
+
+        <audio controls loop>
+            <source src="Westlife I Lay My Love on You Official Video.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <p style="font-size:12px; margin-top:10px;">
+            Tap play to listen to our song. 💗
+        </p>
+    </div>
+
+    <div class="letter">
+        <h2>💌 A Letter For You</h2>
+
+        Happy Monthsary, my love! 🥹❤️
+
+        <br><br>
+
+        Thank you for coming into my life
+        and making my ordinary days feel
+        so special. You give me reasons
+        to smile, even on difficult days.
+
+        <br><br>
+
+        I may not be the perfect partner,
+        but I promise to keep learning,
+        understanding you, and loving you
+        with all my heart.
+
+        <br><br>
+
+        No matter how many months and years
+        pass, I hope we continue choosing
+        each other, supporting each other's
+        dreams, and making beautiful memories.
+
+        <br><br>
+
+        If I could choose again,
+        I would still choose you.
+        Today, tomorrow, and always. 💖
+
+        <div class="signature">
+            I Love You Forever! 💋
+        </div>
+    </div>
+
+    <div class="footer">
+        TWO HEARTS · ONE LOVE · FOREVER ♡
+    </div>
+
+</div>
+
+</body>
+</html>
